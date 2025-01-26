@@ -1,5 +1,5 @@
 import express from "express";
-import Error from "./util/AppError";
+import Error from "./util/AppError.js";
 import ErrorHandler from "./middlewares/ErrorHandle";
 import dotenv from "dotenv";
 import userRouter from "./routers/userRoutes";

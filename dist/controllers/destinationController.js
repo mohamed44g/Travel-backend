@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import AsyncWrapper from "../middlewares/ErrorWarrper";
-import Error from "../util/AppError";
+import Error from "../util/AppError.js";
 import pool from "../db";
 import { Sendresponse } from "../util/response";
 import { destination } from "../models/destinationModel";

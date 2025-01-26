@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import pool from "../db";
+import pool from "../db.js";
 export class Users {
     getUserComments(userId) {
         return __awaiter(this, void 0, void 0, function* () {

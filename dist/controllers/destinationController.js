@@ -33,7 +33,7 @@ var __awaiter =
   };
 import AsyncWrapper from "../middlewares/ErrorWarrper.js";
 import Error from "../util/AppError.js";
-import pool from "../db";
+import pool from "../db.js";
 import { Sendresponse } from "../util/response.js";
 import { destination } from "../models/destinationModel.js";
 const destinationModel = new destination();

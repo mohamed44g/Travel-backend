@@ -31,7 +31,7 @@ var __awaiter =
       step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
   };
-import pool from "../db";
+import pool from "../db.js";
 import bcrypt from "bcrypt";
 import Error from "../util/AppError.js";
 import AsyncWrapper from "../middlewares/ErrorWarrper.js";

@@ -38,7 +38,8 @@ const limiter = rateLimit({
   standardHeaders: "draft-8", // draft-6: `RateLimit-*` headers; draft-7 & draft-8: combined `RateLimit` header
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers.
 });
-app.use(limiter);
+//app.use(limiter);
+console.log(process.env.DATABASE_URL);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/destination", destinationRoutes);
 // Handle 404 errors and forward to error handler

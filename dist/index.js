@@ -39,6 +39,7 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers.
 });
 //app.use(limiter);
+console.log("Environment Variables:", process.env);
 console.log(process.env.DATABASE_URL);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/destination", destinationRoutes);

@@ -17,6 +17,7 @@ app.use(
       "http://192.168.1.8:5173",
       "http://192.168.1.4:5173",
       "http://localhost:5173",
+      "https://tripcraft-eta.vercel.app/"
     ], // Allow all origins
     credentials: true, // Enable cookies
   })

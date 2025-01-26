@@ -1,5 +1,5 @@
-import { verifyAccessToken } from "../util/jwtUtils";
-import Error from "../util/AppError";
+import { verifyAccessToken } from "../util/jwtUtils.js";
+import Error from "../util/AppError.js";
 const authenticate = (req, res, next) => {
     var _a;
     const token = (_a = req.header("Authorization")) === null || _a === void 0 ? void 0 : _a.replace("Bearer ", "");

@@ -34,16 +34,16 @@ var __awaiter =
 import pool from "../db";
 import bcrypt from "bcrypt";
 import Error from "../util/AppError.js";
-import AsyncWrapper from "../middlewares/ErrorWarrper";
-import { Sendresponse } from "../util/response";
+import AsyncWrapper from "../middlewares/ErrorWarrper.js";
+import { Sendresponse } from "../util/response.js";
 import {
   generateAccessToken,
   generateRefreshToken,
   verifyAccessToken,
   verifyRefreshToken,
-} from "../util/jwtUtils";
+} from "../util/jwtUtils.js";
 import nodemailer from "nodemailer";
-import { Users } from "../models/usersModel";
+import { Users } from "../models/usersModel.js";
 export const registerUser = AsyncWrapper((req, res, next) =>
   __awaiter(void 0, void 0, void 0, function* () {
     const { name, email, password, gender } = req.body;

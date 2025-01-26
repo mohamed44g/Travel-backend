@@ -1,13 +1,13 @@
 import express from "express";
 import Error from "./util/AppError.js";
-import ErrorHandler from "./middlewares/ErrorHandle";
+import ErrorHandler from "./middlewares/ErrorHandle.js";
 import dotenv from "dotenv";
-import userRouter from "./routers/userRoutes";
+import userRouter from "./routers/userRoutes.js";
 import helmet from "helmet";
 import { rateLimit } from "express-rate-limit";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import destinationRoutes from "./routers/destinationRoutes";
+import destinationRoutes from "./routers/destinationRoutes.js";
 // Cross-Origin Resource Sharing (CORS)
 dotenv.config();
 const app = express();
